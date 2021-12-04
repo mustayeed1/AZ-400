@@ -1,0 +1,11 @@
+<mat-toolbar color="primary" class="mat-elevation-z1">
+  <button mat-icon-button id="menu" (click)="navService.openNav()" [disabled]="!isLoggedIn">
+    <mat-icon *ngIf="isLoggedIn" >menu</mat-icon>
+  </button>
+  <span>Base Build</span>
+  <span class="example-spacer"></span>
+  <div style="font-size: 15px">
+	
+		{{loggedInUserName | uppercase}}
+	</div>
+</mat-toolbar>
